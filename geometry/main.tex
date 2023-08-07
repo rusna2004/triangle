@@ -1,4 +1,4 @@
-\documentclass[10pt]{article}
+\documentclass[20pt]{article}
 \usepackage{amsfonts, amsmath, amssymb}
 \usepackage[]{setspace}
 \doublespacing
@@ -72,19 +72,23 @@
 1.5.4 Find the distance from $\vec{I}$ to $BC$.
 
 Solution : 
-We know the value of $\vec I$ is
+We know the value of $\vec{I}$ is
 \begin{align}
 I &= \frac{1}{\sqrt{37} + 4 + \sqrt{61}} \myvec{\sqrt{61} - 16 - 3\sqrt{37}\\ -\sqrt{61} + 24 - 5\sqrt{37}}
 \end{align}
 from the problem 1.5.2 .
+The equation of $BC$ from Problem 1.5.1 is:
 \begin{align}
-\text{The equation of $BC$ from Problem 1.5.1 is:}\notag \\
-\vec{n_2^{\top}}\vec{x}+50=0\\
-\text{Let d be the distance between $\vec I$ and $BC$, then}\notag \\
-d &= \frac{\left|\vec{n_2^{\top}} \vec I + 50\right|}{||\vec{n_2^{\top}}||} \\[20pt]
-d &= \frac{\left|\frac{1}{\sqrt{37} + 4 + \sqrt{61}}\myvec{11,-1} \myvec{\sqrt{61} - 16 - 3\sqrt{37}\\ -\sqrt{61} + 24 - 5\sqrt{37}} + 50\right|}{\sqrt{122}} \notag \\[20pt]
-&= \frac{\frac{12\sqrt{61} - 28\sqrt{37} - 200}{\sqrt{37} + 4 + \sqrt{61}} + 50}{\sqrt{122}} \notag\\[20pt]
-&= \frac{62\sqrt{61} + 22\sqrt{37}}{\sqrt{122} {(\sqrt{37} + 4 + \sqrt{61}})}\notag \\ [20pt]
-&= 3.1272 \notag                                       
+\vec{n_2^{\top}}\vec{x}+50=0
+\end{align}
+where $\vec{n_2^{\top}} = \myvec{11&-1}$ 
+
+Let $r$ be the distance between $\vec{I}$ and $BC$, then
+\begin{align}
+r &= \frac{\abs{\vec{n_2^{\top}} \vec{I} + 50}}{\norm{\vec{n_2}}} \\
+r &= \frac{\abs{\frac{1}{\sqrt{37} + 4 + \sqrt{61}}\myvec{11&-1} \myvec{\sqrt{61} - 16 - 3\sqrt{37}\\ -\sqrt{61} + 24 - 5\sqrt{37}} + 50}}{\sqrt{122}} \\
+&= \frac{\frac{12\sqrt{61} - 28\sqrt{37} - 200}{\sqrt{37} + 4 + \sqrt{61}} + 50}{\sqrt{122}} \\
+&= \frac{62\sqrt{61} + 22\sqrt{37}}{\sqrt{122} {(\sqrt{37} + 4 + \sqrt{61}})} \\
+&= 3.1272                                        
 \end{align}
 \end{document}
