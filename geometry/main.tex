@@ -1,4 +1,4 @@
-\documentclass[20pt]{article}
+\documentclass[]{article}
 \usepackage{amsfonts, amsmath, amssymb}
 \usepackage[]{setspace}
 \doublespacing
@@ -77,26 +77,19 @@ We know the value of $\vec{I}$ is
 \vec{I} &= \frac{1}{\sqrt{37} + 4 + \sqrt{61}} \myvec{\sqrt{61} - 16 - 3\sqrt{37}\\ -\sqrt{61} + 24 - 5\sqrt{37}}
 \end{align}
 from the problem 1.5.2 .
-The equation of $BC$ from Problem 1.5.1 is:
+The equation of $BC$ is:
 \begin{align}
-\vec{n_2^{\top}}\vec{x} + 38=0
-\end{align}
-where,
-\begin{align} 
-\vec{n_2} = \myvec{11\\1}
-\implies \vec{n_2^{\top}} = \myvec{11 & 1} 
-\end{align}
-Also,
-\begin{align}
-\norm{\vec{n_2}} = \sqrt{{11}^2 + {1}^2} = \sqrt{121+1} = \sqrt{122}
+\myvec{11&1}\vec{x} + 38=0
 \end{align}
 
 Let $r$ be the distance between $\vec{I}$ and $BC$, then
 \begin{align}
-r &= \frac{\abs{\vec{n_2^{\top}} \vec{I} + 38}}{\norm{\vec{n_2}}} \\
-r &= \frac{\abs{\frac{1}{\sqrt{37} + 4 + \sqrt{61}}\myvec{11&-1} \myvec{\sqrt{61} - 16 - 3\sqrt{37}\\ -\sqrt{61} + 24 - 5\sqrt{37}} + 38}}{\sqrt{122}} \\
-&= \frac{\frac{12\sqrt{61} - 28\sqrt{37} - 200}{\sqrt{37} + 4 + \sqrt{61}} + 38}{\sqrt{122}} \\
-&= \frac{50\sqrt{61} + 10\sqrt{37} - 48}{\sqrt{122} {(\sqrt{37} + 4 + \sqrt{61}})} \\
-&= 2.0408                                        
+r &= \frac{\abs{\myvec{11&1} \vec{I} + 38}}{\norm{\myvec{11 \\ 1}}} \\
+r &= \frac{\abs{\frac{1}{\sqrt{37} + 4 + \sqrt{61}} \myvec{11&1} \myvec{\sqrt{61} - 16 - 3\sqrt{37}\\ -\sqrt{61} + 24 - 5\sqrt{37}} + 38}}{\sqrt{{11}^2 + {1}^2}} \\
+&= \frac{\frac{10\sqrt{61} - 38\sqrt{37} - 152}{\sqrt{37} + 4 + \sqrt{61}} + 38}{\sqrt{122}} \\
+&= \frac{48\sqrt{61}}{\sqrt{122} {(\sqrt{37} + 4 + \sqrt{61}})} \\
+&= \frac{48}{\sqrt{2}(\sqrt{37} + 4 + \sqrt{61})}\\
+&= \frac{24\sqrt{2}}{\sqrt{37}+4+\sqrt{61}}\\
+&= 1.8969                                        
 \end{align}
 \end{document}
